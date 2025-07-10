@@ -207,7 +207,7 @@ class SymbolicLearningAgent:
         return path, total_reward
 
 def main():
-    env = gym.make("LunarLander-v2", gravity=-10.0)
+    env = gym.make("LunarLander-v3", gravity=-10.0)
     symbolic_layer = SymbolicLayer(input_dim=env.observation_space.shape[0])
     agent = SymbolicLearningAgent(symbolic_layer, env)
     
